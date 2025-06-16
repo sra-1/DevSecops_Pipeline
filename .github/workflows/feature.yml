@@ -6,7 +6,8 @@ on:
       - develop
       
 env:
-        DOCKER_IMAGE: ankit1111/petapp:${{ github.sha }}
+        #DOCKER_IMAGE: ankit1111/petapp:${{ github.sha }}
+        DOCKER_IMAGE: shrav2004/sra1_docker_repo:${{ github.sha }}
         MAVEN_OPTS: "-DskipTests=true"      
 
 jobs:

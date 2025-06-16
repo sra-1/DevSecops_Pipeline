@@ -42,8 +42,11 @@ jobs:
         with:
           version: latest
         env:
-          JF_URL: https://trialed2lwf.jfrog.io
+          # JF_URL: https://trialed2lwf.jfrog.io
+          JF_URL: https://trial6wvez8.jfrog.io/
           JF_ACCESS_TOKEN: ${{ secrets.JFROG_TOKEN }}
       - name: Upload JAR to JFrog
         run: |
-           jf rt u "target/*.jar" "petjfrog-repo/"     
+          # jf rt u "target/*.jar" "petjfrog-repo/" 
+            jf rt u "target/*.jar" "CICD_repository_key_16Jun/"       
+    
